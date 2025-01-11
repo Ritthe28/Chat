@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="text-white bg-gray-900 flex justify-center items-center h-screen">
+    <div class="container bg-gray-800 shadow-lg rounded-lg w-[90vw] md:w-[60vw] h-[90vh] p-4 overflow-y-auto">
+        <div id="answerSection" class="flex flex-col space-y-4 overflow-y-auto h-[50vh] p-4 bg-gray-700 rounded-lg">
+            <div class="query self-end bg-blue-500 text-white p-3 rounded-lg w-[60vw] md:w-[40vw]">
+                This is a query
+            </div>
+            <div class="answer self-start bg-green-500 text-white p-3 rounded-lg w-[60vw] md:w-[40vw]">
+                This is an answer
+            </div>
+        </div>
+        <div class="input flex mt-4">
+            <input type="text" class="w-[85%] p-3 rounded-l-lg border-none focus:outline-none text-black" placeholder="Type your message...">
+            <button class="w-[15%] bg-blue-600 text-white p-3 rounded-r-lg">Send</button>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
